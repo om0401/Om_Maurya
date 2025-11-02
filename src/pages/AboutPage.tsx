@@ -14,7 +14,7 @@ export function AboutPage() {
   const [loading, setLoading] = useState(true);
   const [isEditing, setIsEditing] = useState(false);
   const [aboutData, setAboutData] = useState({
-    video_url: "/IMG/1000005230.mp4", // ✅ Default local video path
+    video_url: "/IMG/1000005230.mp4", // ✅ Local video path
     description: "",
     tools: [] as string[],
     resume_url: "",
@@ -171,7 +171,7 @@ export function AboutPage() {
                     </p>
                   </div>
                 ) : aboutData.video_url ? (
-                  <div className="aspect-video bg-muted/20 rounded-xl overflow-hidden border border-border/30">
+                  <div className="aspect-video bg-black rounded-xl overflow-hidden border border-border/30 flex items-center justify-center">
                     {aboutData.video_url.includes("youtube.com") ||
                     aboutData.video_url.includes("vimeo.com") ? (
                       <iframe
@@ -183,7 +183,7 @@ export function AboutPage() {
                     ) : (
                       <video
                         src={aboutData.video_url}
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-contain object-center bg-black rounded-xl"
                         autoPlay
                         loop
                         muted
