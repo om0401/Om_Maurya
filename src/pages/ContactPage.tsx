@@ -35,8 +35,8 @@ export function ContactPage() {
     {
       icon: Mail,
       label: 'Email',
-      value: 'om.maurya0682nmims.in',
-      href: 'mailto:om.maurya0682nmims.in'
+      value: 'om.maurya068@nmims.in',
+      href: 'mailto:om.maurya068@nmims.in'
     },
     {
       icon: Phone,
