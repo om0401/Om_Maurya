@@ -6,8 +6,8 @@ import { Button } from '../components/ui/button';
 import { Input } from '../components/ui/input';
 import { Textarea } from '../components/ui/textarea';
 import { Badge } from '../components/ui/badge';
-import { Edit, Save, X, Download, Upload, FileText } from 'lucide-react';
-import { toast } from 'sonner@2.0.3';
+import { Edit, Save, X, Download, FileText } from 'lucide-react';
+import { toast } from 'sonner';
 
 export function AboutPage() {
   const { isOwner } = useAuth();
@@ -135,10 +135,11 @@ export function AboutPage() {
                     <Input
                       value={editData.video_url}
                       onChange={(e) => setEditData({ ...editData, video_url: e.target.value })}
-                      placeholder="Enter video URL (YouTube embed, MP4, etc.)"
+                      placeholder="Enter video URL or local path (e.g., /IMG/1000005230.mp4)"
                       className="bg-muted/20 border-border/50"
                     />
                     <p className="text-muted-foreground text-sm">
+                      For local MP4 file: use relative path (e.g., /IMG/1000005230.mp4) <br />
                       For YouTube: Use embed URL (e.g., https://www.youtube.com/embed/VIDEO_ID)
                     </p>
                   </div>
@@ -195,7 +196,7 @@ export function AboutPage() {
                       <p className="text-muted-foreground">No tools added yet</p>
                     )}
                   </div>
-                  
+
                   {isEditing && (
                     <div className="flex gap-2">
                       <Input
