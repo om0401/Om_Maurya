@@ -35,26 +35,26 @@ export function ContactPage() {
     {
       icon: Mail,
       label: 'Email',
-      value: 'om.maurya@example.com',
-      href: 'mailto:om.maurya@example.com'
+      value: 'om.maurya0682nmims.in',
+      href: 'mailto:om.maurya0682nmims.in'
     },
     {
       icon: Phone,
       label: 'Phone',
-      value: '+91 98765 43210',
-      href: 'tel:+919876543210'
+      value: '+91 9653469389',
+      href: 'tel:+919653469389'
     },
     {
       icon: Linkedin,
       label: 'LinkedIn',
-      value: 'linkedin.com/in/ommaurya',
-      href: 'https://linkedin.com/in/ommaurya'
+      value: 'www.linkedin.com/in/om-maurya-823016165/',
+      href: 'https://www.linkedin.com/in/om-maurya-823016165/'
     },
     {
       icon: Github,
       label: 'GitHub',
-      value: 'github.com/ommaurya',
-      href: 'https://github.com/ommaurya'
+      value: 'github.com/om0401',
+      href: 'https://github.com/om0401'
     }
   ];
 
